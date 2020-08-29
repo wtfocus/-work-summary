@@ -171,7 +171,7 @@
     -   监听 redis channels，将相关 log 持久化到 scheduler_task_log（`models.scheduler.TaskLog`） 表中。
 7.  报警
     -   实现类：`biz.alert_tasks.send_alarm`
-    -   相关技术：`tornado.ioloop.PeriodicCallback`，参考：[tornado.ioloop.PeriodicCallback](https://tornado-zh.readthedocs.io/zh/latest/ioloop.html?highlight=tornado ioloop periodiccallbac#tornado.ioloop.PeriodicCallback)
+    -   相关技术：`tornado.ioloop.PeriodicCallback`，参考：[tornado.ioloop.PeriodicCallback](https://tornado-zh.readthedocs.io/zh/latest/ioloop.html?highlight=tornado%20ioloop%20periodiccallbac#tornado.ioloop.PeriodicCallback)
 8.  其他，非核心
     
     -    暂时不去理会
