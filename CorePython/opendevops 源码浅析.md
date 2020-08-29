@@ -12,12 +12,19 @@
 2.  项目模块：
 
     >前端代码：[codo](https://github.com/opendevops-cn/codo)
+    
     >管理后端：[codo-admin](https://github.com/opendevops-cn/codo-admin)
+    
     >定时任务：[codo-cron](https://github.com/opendevops-cn/codo-cron)
+    
     >任务调度：[codo-task](https://github.com/opendevops-cn/codo-task)
+    
     >资产管理：[codo-cmdb](https://github.com/opendevops-cn/codo-cmdb)
+    
     >配置中心：[codo-kerrigan](https://github.com/opendevops-cn/kerrigan)
+    
     >运维工具：[codo-tools](https://github.com/opendevops-cn/codo-tools)
+    
     >域名管理：[codo-dns](https://github.com/opendevops-cn/codo-dns)
 
 3.  下面主要看看 **code-cron** 和 **code-task** 的实现原理及相关技术。
@@ -71,7 +78,7 @@
 
     -   可以看出，TornadoScheduler 也是基于 **apscheduler** 和 **ioloop** 来实现异步定时任务。
 
-    -   apscheduler 可以参考：[Python APScheduler 分享]([http://gitlab.playcrab-inc.com/gaoyang/operation-document/-/wikis/Python%20APScheduler%20%E5%88%86%E4%BA%AB](http://gitlab.playcrab-inc.com/gaoyang/operation-document/-/wikis/Python APScheduler 分享)
+    -   apscheduler 可以参考：[Python APScheduler 分享](https://github.com/wtfocus/work-summary/blob/master/CorePython/APScheduler%20%E6%B5%85%E6%9E%90.md)
 
 4.  url 接口汇总：
 
@@ -164,7 +171,7 @@
     -   监听 redis channels，将相关 log 持久化到 scheduler_task_log（`models.scheduler.TaskLog`） 表中。
 7.  报警
     -   实现类：`biz.alert_tasks.send_alarm`
-    -   相关技术：`tornado.ioloop.PeriodicCallback`，参考：[tornado.ioloop.``PeriodicCallback]([https://tornado-zh.readthedocs.io/zh/latest/ioloop.html?highlight=tornado%20ioloop%20periodiccallbac#tornado.ioloop.PeriodicCallback](https://tornado-zh.readthedocs.io/zh/latest/ioloop.html?highlight=tornado ioloop periodiccallbac#tornado.ioloop.PeriodicCallback))
+    -   相关技术：`tornado.ioloop.PeriodicCallback`，参考：[tornado.ioloop.PeriodicCallback](https://tornado-zh.readthedocs.io/zh/latest/ioloop.html?highlight=tornado ioloop periodiccallbac#tornado.ioloop.PeriodicCallback)
 8.  其他，非核心
     
     -    暂时不去理会
