@@ -168,10 +168,11 @@
                 # poll a key for updates
                 index = None
                 while True:
+                    # 对应 key 如果没有修改，get() 会阻塞。
                     index, data = c.kv.get(
                         key,
                         index=index,
-                        wait="10s"
+                        wait="10s"	# 超时，get() 会返回数据
                     )
                     logger.info("{} {}".format(index, data))
             
