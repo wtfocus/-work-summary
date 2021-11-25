@@ -4,7 +4,7 @@
 
 -   APscheduler 全称 Advanced Python Scheduler。
 -   主要来用帮你完成一个**调度任务**。
--   之前一个分享 wiki:  [Python APScheduler 分享](http://gitlab.playcrab-inc.com/gaoyang/operation-document/-/wikis/Python-APScheduler-分享)
+-   之前一个分享 wiki:  [Python APScheduler 分享](wikis/Python-APScheduler-分享)
 
 ### 基础概念/组件
 
